@@ -184,6 +184,7 @@
                         url: 'http://api.douban.com/v2/movie/us_box',
                         dataType: 'jsonp'
                     }).done(function(ret) {
+                        console.log(ret)
                         callback && callback(ret)
                     }).fail(function() {
                         console.log('数据异常')
